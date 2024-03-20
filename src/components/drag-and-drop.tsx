@@ -1,14 +1,14 @@
-import { DragEvent, PropsWithChildren } from "react";
+import { PropsWithChildren, DragEvent } from "react";
 
 type DragAndDropPadProps = {
   className?: string;
-  onFileDropped: (files: Array<File>) => void;
+  onFilesDropped: (files: Array<File>) => void;
 };
 
 export const DragAndDropPad = ({
   className,
   children,
-  onFileDropped,
+  onFilesDropped,
 }: PropsWithChildren<DragAndDropPadProps>) => {
   function onDrop(event: DragEvent<HTMLDivElement>) {
     event.preventDefault();
@@ -30,7 +30,7 @@ export const DragAndDropPad = ({
   }
 
   function processFiles(files: Array<File>) {
-    onFileDropped(files);
+    onFilesDropped(files);
   }
 
   function onDragOver(event: DragEvent<HTMLDivElement>) {

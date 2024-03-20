@@ -1,6 +1,7 @@
 type FileListProps = {
   files: Array<File>;
 };
+
 export const FileList = ({ files }: FileListProps) => {
   return (
     <div className="file-list-container">

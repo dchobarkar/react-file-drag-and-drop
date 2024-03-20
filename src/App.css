@@ -4,12 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px dashed gray;
+  border: 3px dashed grey;
   border-radius: 15px;
 }
 
 .drop-hint {
   font-weight: 600;
-  color: gray;
+  color: grey;
   font-size: 1.5rem;
 }
